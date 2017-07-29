@@ -1,0 +1,39 @@
+{
+  "name": "web",
+  "description": "kevin bielawski web",
+  "dependencies": {
+    "mixpanel-browser": "^2.11.1",
+    "next": "3.0.1-beta.19",
+    "react": "15.6.1",
+    "react-dom": "15.6.1"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "next:export": "next export",
+    "next:publish": "rm -rf out && yarn build && yarn next:export && mv out docs",
+
+    "precommit": "lint-staged",
+    "prepush-install": "prepush -c package.json install",
+    "prepush-remove": "prepush -c package.json remove",
+    "prettier": "prettier --single-quote --trailing-comma es5",
+    "prettier:write": "yarn run prettier --write \"components/**/**/*.js\" \"constants/**/**/*.js\" \"pages/**/**/*.js\" \"static/**/**/*.js\" \"utils/**/**/*.js\""
+  },
+  "devDependencies": {
+    "husky": "^0.13.4",
+    "lint-staged": "^3.6.0",
+    "prepush": "^3.1.11",
+    "prettier": "^1.1.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn run prettier:write",
+      "git add"
+    ]
+  },
+  "prepush": {
+    "tasks": [
+    ]
+  }
+}

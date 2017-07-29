@@ -1,0 +1,6 @@
+
+          window.__NEXT_REGISTER_PAGE('/about', function() {
+            var comp = module.exports=webpackJsonp([6],{345:function(e,t,n){e.exports=n(346)},346:function(e,t,n){"use strict";function a(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(t,"__esModule",{value:!0});var u=n(13),o=a(u),i=n(7),r=a(i),l=n(8),d=a(l),f=n(14),s=a(f),c=n(15),p=a(c),m=n(173),k=a(m),v=n(6),w=a(v),_=n(174),b=a(_),h=n(119),I=a(h),y=n(184),M=a(y),g=(0,k.default)(["\n  My name is ",". I work at "," and live in\n  ",". When I'm not working, I "," and ",".\n"],["\n  My name is ",". I work at "," and live in\n  ",". When I'm not working, I "," and ",".\n"]),E=function(e){return(0,M.default)(e)(g,"🌞 Kevin Bielawski","💼 HubSpot","🏡 Boston","🚴 ride bikes","🛶 row boats")},x=function(e){function t(){return(0,r.default)(this,t),(0,s.default)(this,(t.__proto__||(0,o.default)(t)).apply(this,arguments))}return(0,p.default)(t,e),(0,d.default)(t,[{key:"componentDidMount",value:function(){this.props.trackView("about")}},{key:"render",value:function(){return w.default.createElement(I.default,null,w.default.createElement("div",{className:"grid-25"},"about"),w.default.createElement("div",{className:"grid-75"},E(this.props.trackInteraction)))}}]),t}(w.default.Component);t.default=(0,b.default)(x)}},[345]);
+            return { page: comp.default }
+          })
+        
